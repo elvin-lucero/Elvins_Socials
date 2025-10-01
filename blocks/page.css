@@ -1,0 +1,22 @@
+.page {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;  /* Dark background */
+    color: #ffffff;  /* White text */
+}
+
+/* Make sure links are also visible on dark background */
+.page a {
+    color: #66b3ff;  /* Light blue for links */
+    text-decoration: none;
+}
+
+.page a:hover {
+    color: #99ccff;  /* Lighter blue when hovering over links */
+    text-decoration: underline;
+}
