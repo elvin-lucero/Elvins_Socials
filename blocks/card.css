@@ -19,7 +19,3 @@
     text-decoration: none !important;  /* Force no underline on hover */
     color: #ffffff !important;  /* Keep white color on hover */
 }
-
-.card a:hover {
-    text-decoration: none;
-}
