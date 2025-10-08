@@ -1,22 +1,24 @@
 .page {
     margin: 0;
-    padding: 0;
+    padding: 64px 20px 20px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: #1a1a1a;  /* Dark background */
-    color: #ffffff;  /* White text */
+    background: linear-gradient(135deg, #4a5671 0%, #5d6b89 25%, #7283a3 50%, #8799bd 75%, #9eafd3 100%);
+    color: #333333;
+    position: relative;
+    box-sizing: border-box;
 }
 
-/* Make sure links are also visible on dark background */
-.page a {
-    color: #66b3ff;  /* Light blue for links */
-    text-decoration: none;
-}
-
-.page a:hover {
-    color: #99ccff;  /* Lighter blue when hovering over links */
-    text-decoration: underline;
+.page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(100px);
+    background: linear-gradient(45deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%);
+    z-index: 1;
 }

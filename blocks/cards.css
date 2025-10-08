@@ -1,13 +1,15 @@
 .cards {
-  margin: 20px 0 40px;
-  text-align: center;
+  margin: 20px 0;
   width: 100%;
+  max-width: 680px;
 }
 
 .cards__header {
-  font-size: 1.5em;
-  margin-bottom: 1em;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5em;
   text-align: center;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .cards__list {
@@ -16,8 +18,6 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  gap: 12px;
   width: 100%;
-  max-width: 300px;
 }

@@ -1,9 +1,79 @@
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
     text-align: center;
-    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
 }
 
-.header h1 {
-    margin: 0;
-    padding: 20px 0;
+.header__avatar-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.header__avatar-placeholder::after {
+    content: 'EL';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.header__description {
+    max-width: 500px;
+    margin: 0.5em 0 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+}
+
+.header__avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    object-fit: cover;
+}
+
+.header__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
+
+.header__subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0 0 16px;
+}
+
+.header__social {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.header__social-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.header__social-link:hover {
+    opacity: 1;
 }
