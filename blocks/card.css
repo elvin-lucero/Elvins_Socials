@@ -1,50 +1,50 @@
 .card {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 50px;
-    padding: 16px 24px;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    width: 100%;
-    box-sizing: border-box;
-    color: #ffffff !important;
-    text-decoration: none !important;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    font-size: 1rem;
-    font-weight: 500;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    position: relative;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  padding: 16px 24px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 1rem;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
-    transform: translateY(-2px);
-    background-color: rgba(255, 255, 255, 0.85);
-    border-color: rgba(0, 0, 0, 0.08);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .card__icon {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .card__icon img {
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
 
 .card__text {
-    flex-grow: 1;
-    text-align: center;
-    padding-right: 32px; /* To balance the icon space on the left */
+  flex-grow: 1;
+  text-align: center;
+  padding-right: 32px; /* To balance the icon space on the left */
 }
